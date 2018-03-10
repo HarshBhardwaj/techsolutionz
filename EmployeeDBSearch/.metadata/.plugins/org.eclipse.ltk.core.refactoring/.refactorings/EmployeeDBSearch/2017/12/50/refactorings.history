@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;threesixtyfivetech.DatabaseConnection.java&apos; to &apos;ConnectionManager.java&apos;&#x0D;&#x0A;- Original project: &apos;EmployeeDBSearch&apos;&#x0D;&#x0A;- Original element: &apos;threesixtyfivetech.DatabaseConnection.java&apos;&#x0D;&#x0A;- Renamed element: &apos;threesixtyfivetech.ConnectionManager.java&apos;" description="Rename compilation unit &apos;DatabaseConnection.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;threesixtyfivetech{DatabaseConnection.java" name="ConnectionManager.java" references="false" stamp="1513050094385" version="1.0"/>
+</session>
