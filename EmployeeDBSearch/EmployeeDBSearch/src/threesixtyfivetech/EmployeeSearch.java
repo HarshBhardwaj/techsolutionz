@@ -174,7 +174,7 @@ public class EmployeeSearch extends JFrame {
 						fName = parts[0];
 						lName = parts[1];
 						
-						String query = "select * from employee where ufname=? and ulname=?";
+						String query = "select * from employee where fname=? and lname=?";
 						stmt = con.prepareStatement(query);					
 												
 						stmt.setString(1, fName);
@@ -183,7 +183,7 @@ public class EmployeeSearch extends JFrame {
 					} else {
 						fName = parts[0];
 						
-						String query1 = "select * from employee where ufname=?";
+						String query1 = "select * from employee where fname=?";
 						stmt = con.prepareStatement(query1);					
 						
 						stmt.setString(1, fName);

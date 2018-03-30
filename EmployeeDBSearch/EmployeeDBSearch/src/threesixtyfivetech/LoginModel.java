@@ -24,10 +24,11 @@ public class LoginModel {
         return this.connection != null;
     }
 
-    public boolean isLogin(String user, String pass, String opt) throws Exception{
+    @SuppressWarnings("unused")
+	public boolean isLogin(String user, String pass, String opt) throws Exception{
         PreparedStatement pr = null;
         ResultSet rs = null;
-        String sql = "SELECT * FROM login WHERE username = ? and password = ? and division = ?";
+        String sql = "SELECT * FROM login WHERE upper(username) = ? and password = ? and division = ?";
 
         try{
             pr = this.connection.prepareStatement(sql);
