@@ -52,12 +52,12 @@ public class ConnectionManager{
 	private static ConnectionManager dbInstance;
 	private static final String USERNAME = "dbuser";
 	private static final String PASSWORD = "dbpassword";
-	private static final String CONN = "jdbc:mysql://localhost/login";
-	private static final String SQCONN = "jdbc:sqlite:schoolsystem.sqlite";
+//	private static final String CONN = "jdbc:mysql://localhost/login";
+	private static final String SQCONN = "jdbc:sqlite:techsolutionz.db";
 	
 	public static Connection getConnection() throws SQLException{
 		try {
-			Class.forName("org.sqllite.JDBC");
+			Class.forName("org.sqlite.JDBC");
 			return DriverManager.getConnection(SQCONN);
 		}catch(ClassNotFoundException e) {
 			e.printStackTrace();

@@ -86,12 +86,12 @@ public class Login extends JFrame {
 					String uname = txtUname.getText();
 					char[] upass = txtUpass.getPassword();
 					
-					ConnectionManager.getInstance();
+ 					ConnectionManager.getInstance();
 					//Database connection
 					con = ConnectionManager.getConnection();
 					
 					//SQL Query
-					String query = "select * from employee_schema.emp_login where username=? and pass=?";
+					String query = "select * from login where username=? and password=?";
 					stmt = con.prepareStatement(query);
 					
 					stmt.setString(1, uname);
